@@ -1,6 +1,6 @@
-# 🚑 Emergency Room Demand Forecasting
+# Project Overview
 
-## 🎯 Goal
+## 🎯 Goal: Emergency Room Demand Forecasting
 Build a robust multi-horizon forecasting system for Emergency Room (ER) volumes and triage acuity distributions. The project models volatility across:
 - **Short-term**: hourly / daily dispatch planning
 - **Medium-term**: monthly seasonal surges
