@@ -1,0 +1,44 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints and outputs
+Notebook/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code workspace settings
+.vscode/
+
+# Data files and exports
+Notebook/data/raw/
+*.csv
+*.tsv
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Kaggle credentials and secrets
+kaggle.json
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and local runtime
+*.log
+*.sqlite
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# OS generated files
+.DS_Store
+Thumbs.db
