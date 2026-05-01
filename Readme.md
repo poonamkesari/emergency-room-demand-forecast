@@ -1,7 +1,7 @@
 # Project Overview
 
 ## 🎯 Goal: Emergency Room Demand Forecasting
-Build a robust multi-horizon forecasting system for Emergency Room (ER) volumes and triage acuity distributions. The project models volatility across:
+Build a robust multi-horizon forecasting system for Emergency Room (ER) patient volume and operational demand. The project models volatility across:
 - **Short-term**: hourly / daily dispatch planning
 - **Medium-term**: monthly seasonal surges
 - **Long-term**: annual demographic and trend changes
@@ -14,7 +14,7 @@ Forecasting is treated as a multi-stage time-series problem, with modeling tailo
 ### Short-term forecasting (1–72 hours)
 - Capture high-frequency volatility and irregular arrival spikes
 - Use models such as **LightGBM** or recurrent architectures like **LSTM**
-- Model intra-day patterns, weekday/weekend seasonality, and acuity shifts
+- Model intra-day patterns, weekday/weekend seasonality, arrival spikes, admission burden, and wait-time pressure
 
 ### Medium- and long-term forecasting (1–12+ months)
 - Use structural time-series and advanced statistical models
@@ -25,9 +25,9 @@ Forecasting is treated as a multi-stage time-series problem, with modeling tailo
 The project uses operational emergency department records, including:
 - Timestamped patient arrivals
 - Treatment outcomes and lengths of stay
-- Patient demographics and triage categories
+- Patient demographics and department referrals
 
-This information is structured in the dataset file and is critical for forecasting both volume and severity of incoming demand.
+This information is structured in the dataset file and is critical for forecasting patient volume and resource demand.
 
 ## ✅ Success Metrics
 Model performance is evaluated using domain-appropriate error measures:
@@ -48,4 +48,3 @@ The forecast must also demonstrate real-world value by supporting:
 
 ## 🚀 Notes
 Make sure the Kaggle CLI is configured and the dataset is available in `data/raw/` before running the modeling workflow.
-
