@@ -1,12 +1,12 @@
 {
-  "Study Design & Problem Formulation": "Frame the project as short-term emergency department demand forecasting for operational staffing support. Define patient arrival volume as the primary target and use wait time, admission counts, and peak-period behavior as operational pressure signals.",
-  "Data Ingestion & Integration": "Download the Kaggle hospital emergency room dataset into Notebook/data/raw and structure timestamped patient encounters into hourly demand records for sequential processing.",
-  "Data Cleaning & Quality Assurance": "Validate required source columns, parse admission timestamps, check missing or invalid operational fields, sort records chronologically, and create a continuous hourly timeline with explicit zero-arrival hours.",
-  "Exploratory Time-Series Analysis": "Assess the regularized hourly patient-arrival series using visual trend checks, rolling summaries, stationarity tests, STL decomposition, and autocorrelation analysis.",
-  "Feature Engineering & Temporal Embedding": "Create leakage-safe calendar, flu-season, weather, lag, rolling-window, and cyclical time features for 1h, 6h, 24h, and 72h forecasting targets.",
-  "Chronological Split Strategy": "Use strict chronological train, validation, and test splits so future observations never leak into model training or feature construction.",
-  "Baseline Model Establishment": "Build simple forecasting benchmarks including persistence, seasonal naive forecasts, and moving-average forecasts to establish a performance floor.",
-  "Short-Term Forecasting Model Suite": "Train and compare interpretable regression models, a compact SARIMAX comparison, and nonlinear tree-based models such as LightGBM or a scikit-learn fallback for short-term ER patient volume forecasting.",
-  "Model Evaluation & Operational Validation": "Evaluate models with RMSE, MAE, zero-safe MAPE, mean bias, underprediction rate, peak-period error, and hour/day error summaries to connect statistical accuracy with staffing risk.",
-  "Final Summary & Future Work": "Summarize the best model by horizon, key operational risks, limitations, and future extensions such as LSTM modeling, explicit staffing simulation, and medium- or long-term seasonal forecasting."
+  "🎯 Study Design & Problem Formulation": "Frame the project as short-term emergency department demand forecasting for operational staffing support. Define patient arrival volume as the primary target and use wait time, admission counts, and peak-period behavior as operational pressure signals.",
+  "📥 Data Ingestion & Integration": "Download the Kaggle hospital emergency room dataset into Notebook/data/raw and structure timestamped patient encounters into hourly demand records for sequential processing.",
+  "🧼 Data Cleaning & Quality Assurance": "Validate required source columns, parse admission timestamps, check missing or invalid operational fields, sort records chronologically, and create a continuous hourly timeline with explicit zero-arrival hours.",
+  "🔍 Exploratory Time-Series Analysis": "Assess the regularized hourly patient-arrival series using visual trend checks, rolling summaries, stationarity tests, STL decomposition, and autocorrelation analysis.",
+  "🧱 Feature Engineering & Temporal Embedding": "Create leakage-safe calendar, flu-season, weather, lag, rolling-window, and cyclical time features for 1h, 6h, 24h, and 72h forecasting targets.",
+  "⏱️ Chronological Split Strategy": "Use strict chronological train, validation, and test splits so future observations never leak into model training or feature construction.",
+  "📏 Baseline Model Establishment": "Build simple forecasting benchmarks including persistence, seasonal naive forecasts, and moving-average forecasts to establish a performance floor.",
+  "🤖 Short-Term Forecasting Model Suite": "Train and compare interpretable regression models, a compact SARIMAX comparison, and nonlinear tree-based models such as LightGBM or a scikit-learn fallback for short-term ER patient volume forecasting.",
+  "🚦 Model Evaluation & Operational Validation": "Evaluate models with RMSE, MAE, zero-safe MAPE, mean bias, underprediction rate, peak-period error, and hour/day error summaries to connect statistical accuracy with staffing risk.",
+  "✅ Final Summary & Future Work": "Summarize the best model by horizon, key operational risks, limitations, and future extensions such as LSTM modeling, explicit staffing simulation, and medium- or long-term seasonal forecasting."
 }
