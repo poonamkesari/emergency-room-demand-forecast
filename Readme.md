@@ -4,6 +4,8 @@ Emergency departments cannot staff safely from averages alone. Demand can spike 
 
 This project builds a short-term forecasting workflow for ER patient arrivals in Los Angeles so hospital operations teams can anticipate near-term demand across **1h, 6h, 24h, and 72h** planning horizons.
 
+Compared with the persistence baseline, the **Poisson Regression** model reduced peak-hour forecast error by **27.9%** for the **1h** forecast, helping staffing managers anticipate sudden ER demand surges more reliably.
+
 ## ⚡ At A Glance
 
 | Area | Summary |
@@ -50,6 +52,20 @@ The strongest model is not always the most complex one. **Poisson regression** p
 
 The project uses the [Hospital Emergency Room dataset](https://www.kaggle.com/datasets/xavierberge/hospital-emergency-dataset) from Kaggle.
 
+Dataset volume used in this workflow:
+
+| Measure | Value |
+| --- | ---: |
+| Date range | April 1, 2023 to October 30, 2024 |
+| Coverage | About 1.6 years, or 578.9 days |
+| Raw patient encounter records | 9,216 |
+| Unique patient IDs | 9,216 |
+| Observed arrival-hour rows | 6,757 |
+| Regularized hourly rows | 13,895 |
+| Inserted zero-arrival hours | 7,138 |
+| Average hourly arrivals | 0.663 |
+| Maximum hourly arrivals | 6 |
+
 The notebook expects raw data at:
 
 ```text
@@ -74,8 +90,14 @@ If the raw file is missing, the notebook attempts to download it with the Kaggle
 ## 🔁 Reproducibility
 
 1. 🔐 Configure the Kaggle CLI with your Kaggle API token.
-2. 📓 Open `Notebook/main.ipynb`.
-3. ▶️ Run the notebook from top to bottom.
+2. Install project dependencies:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+3. 📓 Open `Notebook/main.ipynb`.
+4. ▶️ Run the notebook from top to bottom.
 
 The notebook reuses `Notebook/data/raw/Hospital ER_Data.csv` if it already exists. Otherwise, it downloads the dataset and recreates the processed hourly, daily, weekly, monthly, weather, and modeling-ready files under `Notebook/data/`.
 
