@@ -1,0 +1,10 @@
+seed: 42
+
+data:
+  raw_dir: data/raw
+  hourly_csv: data/hourly_patient_volume.csv
+  regular_csv: data/hourly_patient_volume_regular.csv
+  weather_csv: data/weather_hourly_los_angeles.csv
+
+training_config: configs/training.yaml
+evaluation_config: configs/evaluation.yaml

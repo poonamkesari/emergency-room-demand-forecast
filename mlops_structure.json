@@ -1,0 +1,77 @@
+{
+  "root": "data-scientist_healthcare_ca_los-angeles_amgen_20260417_r242113",
+  "structure": [
+    {
+      "name": "src",
+      "type": "directory",
+      "children": [
+        { "name": "__init__.py", "type": "file", "description": "Package initialization for source code" },
+        { "name": "config.py", "type": "file", "description": "Configuration loading and defaults" },
+        { "name": "data_loader.py", "type": "file", "description": "Functions to load, validate, and version raw data" },
+        { "name": "preprocessing.py", "type": "file", "description": "Feature engineering and preprocessing pipelines" },
+        { "name": "train.py", "type": "file", "description": "Training and model persistence routines" },
+        { "name": "evaluate.py", "type": "file", "description": "Model evaluation metrics and validation logic" },
+        { "name": "predict.py", "type": "file", "description": "Inference utilities for batch and real-time predictions" },
+        { "name": "utils.py", "type": "file", "description": "Reusable helper functions and utilities" }
+      ]
+    },
+    {
+      "name": "configs",
+      "type": "directory",
+      "children": [
+        { "name": "default.yaml", "type": "file", "description": "Default pipeline configuration" },
+        { "name": "training.yaml", "type": "file", "description": "Training hyperparameters and experiment settings" },
+        { "name": "evaluation.yaml", "type": "file", "description": "Evaluation and validation configuration" }
+      ]
+    },
+    {
+      "name": "data",
+      "type": "directory",
+      "children": [
+        {
+          "name": "raw",
+          "type": "directory",
+          "children": [
+            { "name": "Hospital ER_Data.csv", "type": "file", "description": "Raw source dataset for emergency department arrivals" }
+          ]
+        },
+        { "name": "processed", "type": "directory", "children": [] },
+        { "name": "external", "type": "directory", "children": [] }
+      ]
+    },
+    {
+      "name": "notebooks",
+      "type": "directory",
+      "children": [
+        { "name": "eda.ipynb", "type": "file", "description": "Exploratory data analysis and visualization notebook" },
+        { "name": "modeling.ipynb", "type": "file", "description": "Model development and comparison notebook" }
+      ]
+    },
+    {
+      "name": "tests",
+      "type": "directory",
+      "children": [
+        { "name": "test_data_loader.py", "type": "file", "description": "Unit tests for data ingestion and validation" },
+        { "name": "test_preprocessing.py", "type": "file", "description": "Unit tests for preprocessing and feature engineering" },
+        { "name": "test_train.py", "type": "file", "description": "Tests for training flow and reproducibility" },
+        { "name": "test_evaluate.py", "type": "file", "description": "Tests for evaluation metrics and model outputs" }
+      ]
+    },
+    {
+      "name": "docs",
+      "type": "directory",
+      "children": [
+        { "name": "architecture.md", "type": "file", "description": "Project architecture and pipeline design" },
+        { "name": "execution.md", "type": "file", "description": "Runbook for reproducing experiments and deployment" }
+      ]
+    },
+    { "name": "README.md", "type": "file", "description": "Project overview, setup, and reproduction instructions" },
+    { "name": "requirements.txt", "type": "file", "description": "Pinned Python dependencies for reproducibility" },
+    { "name": "environment.yml", "type": "file", "description": "Optional Conda environment definition" },
+    { "name": "setup.py", "type": "file", "description": "Package installation entry point" },
+    { "name": "pyproject.toml", "type": "file", "description": "Build metadata and development dependency configuration" },
+    { "name": "mlops_structure.json", "type": "file", "description": "Repository structure manifest" },
+    { "name": "LICENSE", "type": "file", "description": "Open source license file" },
+    { "name": ".gitignore", "type": "file", "description": "Files and directories excluded from version control" }
+  ]
+}

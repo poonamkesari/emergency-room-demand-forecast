@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "er_demand_forecasting"
+version = "0.1.0"
+description = "Short-term emergency department demand forecasting pipeline."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas==3.0.2",
+  "numpy==2.4.4",
+  "matplotlib==3.10.9",
+  "seaborn==0.13.2",
+  "scikit-learn==1.8.0",
+  "statsmodels==0.14.6",
+  "lightgbm==4.6.0",
+  "kaggle==1.7.4.5",
+  "PyYAML",
+]

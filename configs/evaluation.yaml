@@ -1,0 +1,7 @@
+peak_quantile: 0.75
+
+forecast_horizons:
+  1: Target_1h
+  6: Target_6h
+  24: Target_24h
+  72: Target_72h
